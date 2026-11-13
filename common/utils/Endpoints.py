@@ -1,5 +1,6 @@
 # Define the base URL and endpoints
 BASE_URL = "https://api-fantasy.llt-services.com"
+SECOND_BASE_URL = "https://pr-api.laliga.es"
 LEAGUE_ID = ""
 TEAM_ID = ""
 
@@ -84,4 +85,12 @@ endpoints = {
     # New endpoints
     "ideal": "/api/v4/ideal",
     "profitable": "/api/v4/profitable",
+}
+
+
+endpoints2 = {
+    "me": "api/v1/fan/me",
+    "checkAlias": "/api/v1/fan/CheckAlias", # ?alias=
+    "updateAlias": "/api/v1/fan/me/updatealias",
+    "teamPrefereces": "/api/v1/fan/me/Preferences/Teams" # ?sport=Football
 }
